@@ -33,23 +33,23 @@ app.get('', (req,res) => {
 res.render('index', {
     title: 'Weather',
     helpText: 'Welcome to the Weather Page',
-    name: 'Jestin James'
+    name: 'A robot'
 });
 });
 
 app.get('/about', (req,res) => {
 res.render('about', {
     title: 'About Me',
-    name: 'Jestin James',
+    name: 'A robot',
     helpText: 'I am a Robot not unlike your social life!!',
 })
 });
 
 app.get('/help', (req,res) => {
 res.render('help', {
-    helpText: 'This is some helpful text i hope!!',
+    helpText: 'Sorry I only help robots. And you are a stone like your social life.',
     title: 'Help Page',
-    name: 'Jestin James'
+    name: 'A robot'
 })
 });
 
@@ -104,7 +104,7 @@ app.get('/help/*', (req,res)=> {
 res.render('404', {
     helpText: 'Sorry no such help document exists... like your social Life!!',
     title: 'Help 404',
-    name: 'Jestin James'
+    name: 'A robot'
 })
 }); 
 
@@ -113,7 +113,7 @@ app.get('*', (req,res) => {
 res.render('404', {
 helpText: 'Sorry this page does not exist like your social life!!',
 title: '404',
-name: 'Jestin James'
+name: 'A robot'
 });
 });        
 
