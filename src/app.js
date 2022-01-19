@@ -71,7 +71,7 @@ app.get('/weather', (req,res)=> {
     const lat = latitude;
     const long = longitude;
 
-    foreCast({ lat, long }, (error, { desc, temp, feel } = {}) => {
+    foreCast({ lat, long }, (error, { desc, temp, feel, daynight } = {}) => {
      
         if(error)
     {
@@ -81,9 +81,9 @@ app.get('/weather', (req,res)=> {
         
     }
     let forecast = '';
-    if(desc && temp && feel)
-    {
-        forecast = "In " + location + ", it is currently " + temp + " degrees. But it feels like " + feel + " degrees. So it is generally " + desc + ".";
+    if(desc && temp && feel && daynight)
+    {   
+        forecast = "In " + location + ", it is currently " + temp + " degrees. But it feels like " + feel + " degrees. So it is generally " + desc + ". Right now is it day? "+ daynight + ". Or not. Who knows? Robots are not good at figuring that out. Like your social life.";
     }
     res.send({
         forecast: forecast,

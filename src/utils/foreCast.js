@@ -14,7 +14,8 @@ if(error) {
 sendBack(undefined, {
     desc: body.current.weather_descriptions[0],
     temp: body.current.temperature,
-    feel: body.current.feelslike
+    feel: body.current.feelslike,
+    daynight: body.current.is_day,
 
 });
    
