@@ -9,6 +9,7 @@
 // git --version
 // git init
 // git status
+// Create .gitignore and add in files you dont want to push
 
 // To run even when extensions like hbs changes
 // nodemon src/app.js -e js,hbs
