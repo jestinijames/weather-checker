@@ -1,19 +1,3 @@
-// npm init -y
-// npm install express --save
-// npm i hbs
-// npm i postman-request
-// Sign up/in both github and heroku 
-// install heroku CLI Tools 
-// After that "heroku login" on terminal
-// Install git-cms
-// git --version
-// git init
-// git status
-// Create .gitignore and add in files you dont want to push
-
-// To run even when extensions like hbs changes
-// nodemon src/app.js -e js,hbs
-
 const path = require('path');
 const express = require('express');
 const hbs = require('hbs');
